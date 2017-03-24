@@ -19,24 +19,6 @@ $(document).ready(function(){
       $(".ruby").show();
     }
 
-    // else if (start == "April or May" && size === "Start-up")
-    //   $(".ruby").show();
-    //
-    // // else if ((start === "April or May") && (size === "Established company" || "Start-up" || "Either") && (design === "Design/interaction" || "Behind the Scenes" || "Either")){
-    // //   $(".ruby").show();
-    // // }
-    // else if (size === "Either" && design === "Either" || "Behind the Scenes"){
-    //   $(".php").show();
-    // }
-    // else if (start === "April or May" && size === "Established company" && design === "Design/interaction"){
-    //   $(".csharp").show();
-    // }
-
-
-
-
-
-
     event.preventDefault();
   })
 });
