@@ -8,22 +8,55 @@
     <title>Track Suggester</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
       <h1>Epicodus Track Suggestion Survey</h1>
       </div>
+      <div class="row">
       <div class="well">
       <h2>Introduction</h2>
-      <p id="intro">Congratulations! You have decided that you want to enroll at Epicodus and dive into the world of programming! I am sure you have done some research and now know that there is a lot of different languages and information out there. It can be extremely diffucult trying to nail down what language is best suited for you. Don't fret though, this is where we come in! We have designed a short survey for you to take that will suggest one of five languages for you based on your answers!</p>
+      <p id="intro">Congratulations, you have decided that you want to enroll at Epicodus and dive into the world of programming! I am sure you have done some research and now know that there is a lot of different languages and information out there. It can be extremely diffucult trying to nail down what language is best suited for you. Don't fret though, this is where we come in! We have designed a short survey for you to take that will suggest a language for you based on your answers! Below are links to 5 different languages that provide information about them.</p>
+      </div> <!-- closing well -->
+      <div class="col-md-3">
       <h3>Suggested languages</h3>
       <li><a href="http://rubyonrails.org/">Ruby/Rails </a></li>
       <li><a href="http://php.net/">PHP/Drupal</a></li>
       <li><a href="https://developer.android.com/reference/java/net/package-summary.html">Java/Andriod</a></li>
       <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS/Design</a></li>
       <li><a href="http://c3js.org/">C3/.NET</a></li>
+      </div>  <!-- closing first row -->
+      <div class="col-md-3">
+      <h3>Front End</h3>
+      <p><strong>Front End</strong> typically refers to the stuff that you actually see on the website in the browser (and is often called "client-side"). This covers how the content is presented including all the little user interface elements like menus and dropdowns and transitions and modals. The front end needs to be able to communicate with the user and also with the back end.</p>
       </div>
+      <div class="col-md-3">
+      <h3>Back End</h3>
+      <p><strong>Back End</strong> typically refers to the guts of the application which live on the server (and is often called "server-side"). The back end is more focused on making sure all the right data gets sent out to the browser. It's the portion of iceberg below the surface... lots of stuff needs to go correctly to hand off data to the front end so it can be displayed.</p>
+      </div>
+      <div class="col-md-3">
+      <h3>Food for Thought</h3>
+      <p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does.</p>
+      </div>
+      </div>   <!-- closing row -->
       <form id="language">
         <div class="questionnaire">
+          <p class="questions">What is your education level?</p>
+          <select class="form-control" id="education">
+            <option>HS diploma</option>
+            <option>Some college</option>
+            <option>College degree</option>
+          </select>
+          <p class="questions">Would you prefer to go to school in Seattle or Portland?</p>
+          <select class="form-control" id="location">
+            <option>Portland</option>
+            <option>Seattle</option>
+            <option>Either</option>
+          </select>
+          <p class="questions">Do you like the idea of building internal software for your company, content heavy website or interactive web applications?</p>
+          <select class="form-control" id="build">
+            <option>Internal software</option>
+            <option>Content heavy</option>
+            <option>Interactive</option>
           <p class="questions">When would you like to start your program?</p>
           <select class="form-control" id="start">
             <option>April or May</option>
@@ -42,23 +75,6 @@
             <option>Behind the Scenes</option>
             <option>Either</option>
           </select>
-          <p class="questions">What is your education level?</p>
-          <select class="form-control" id="education">
-            <option>HS diploma</option>
-            <option>Some college</option>
-            <option>College degree</option>
-          </select>
-          <p class="questions">Would you prefer to go to school in Seattle or Portland?</p>
-          <select class="form-control" id="location">
-            <option>Portland</option>
-            <option>Seattle</option>
-            <option>Either</option>
-          </select>
-          <p class="questions">Do you like the idea of building internal software for your company, content heavy website or interactive web applications?</p>
-          <select class="form-control" id="build">
-            <option>Internal software</option>
-            <option>Content heavy</option>
-            <option>Interactive</option>
           </select>
         </div>
         <button class="btn btn-success">Find My Language!</button>
