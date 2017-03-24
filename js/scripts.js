@@ -12,7 +12,7 @@ $(document).ready(function(){
     if (size === "Established company" && design === "Design/interaction"){
       $(".csharp").show();
     }
-    else if (design === "Behind the Scenes" || "Either" && design !== "Design/interaction"){
+    else if ((size === "Start-up") && (design === "Behind the Scenes" || "Either" && design !== "Design/interaction")){
       $(".php").show();
     }
     else if(start === "April or May" || "June or June" || "Either"){
