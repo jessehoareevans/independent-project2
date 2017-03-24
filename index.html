@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbtron">
+      <div class="jumbotron">
       <h1>Take This Survey to Help Select your Programming Language!</h1>
       <h2>Introduction</h2>
       <p>Congratulations! You have decided that you want to check out the world of programming! As I am sure, you have done some research and now know that there is a lot of different languages out there. It can be extremely diffucult trying to nail down what language is best suited for you. Don't fret! This is where we come in! We have designed a short survey for you to take that will suggest one of five languages for you based on your answers!</p>
@@ -27,12 +27,37 @@
             <option>Start-up</option>
             <option>Either</option>
           </select>
-
-
-
+          <p class="questions">Are you interested in the design/interaction part of a website or application or would you prefer to focus on the behind the scenes functionality?</p>
+          <select class="form-control" id="design">
+            <option>Design/interaction</option>
+            <option>Behind the Scenes</option>
+            <option>Either</option>
+          </select>
+          <!-- <p class="questions">Would you prefer to work in a big established company or a startup?</p>
+          <select class="form-control" id="size">
+            <option>Established company</option>
+            <option>Start-up</option>
+            <option>Either</option> -->
+          </select>
         </div>
         <button class="btn btn-success">Find My Language!</button>
       </form>
+      <div class="csharp">
+        <h3>You Got C#!</h3>
+        <p>C# (pronounced "C sharp") is a programming language that is designed for building a variety of applications that run on the .NET Framework. C# is simple, powerful, type-safe, and object-oriented</p>
+        <img src="img/csharp.jpg" alt="C#"/>
+      </div>
+      <div class="ruby">
+        <h3>You Got Ruby on Rails!</h3>
+        <p>Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages. </p>
+        <img src="img/ruby.jpeg" alt="Ruby/Rails"/>
+      </div>
+      <div class="php">
+        <h3>You Got PHP!</h3>
+        <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+        <img src="img/php.jpeg" alt="PHP"/>
+      </div>
+      </div>
     </div>
   </body>
 </html>

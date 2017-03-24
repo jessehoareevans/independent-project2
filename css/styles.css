@@ -5,3 +5,12 @@ h2 {
   text-align: center;
   color: #33CEFF;
 }
+.csharp {
+  display: none;
+}
+.ruby {
+  display: none;
+}
+.php {
+  display: none;
+}
