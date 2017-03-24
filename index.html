@@ -40,6 +40,10 @@
       </div>   <!-- closing row -->
       <form id="language">
         <div class="questionnaire">
+        <div class="form-group">
+         <label for="name1">Enter Your Name</label>
+         <input id="name1" class="form-group" type="text">
+        </div>
           <p class="questions">What is your education level?</p>
           <select class="form-control" id="education">
             <option>HS diploma</option>
@@ -80,19 +84,20 @@
         </div>
         <button class="btn btn-success">Find My Language!</button>
       </form>
+      <div id="form-text">
       <div class="csharp">
-        <h3>You Got C#!</h3>
-        <p>C# (pronounced "C sharp") is a programming language that is designed for building a variety of applications that run on the .NET Framework. C# is simple, powerful, type-safe, and object-oriented</p>
+        <h3>Congratulations <span class="name1"></span>! You should check out C#</h3>
+        <p class="response">C# (pronounced "C sharp") is a programming language that is designed for building a variety of applications that run on the .NET Framework. C# is simple, powerful, type-safe, and object-oriented. The many innovations in C# enable rapid application development while retaining the expressiveness and elegance of C-style languages.</p>
         <img src="img/csharp.jpg" alt="C#"/>
       </div>
       <div class="ruby">
-        <h3>You Got Ruby on Rails!</h3>
-        <p>Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages. </p>
+      <h3>Congratulations <span class="name1"></span>! You should check out Ruby!</h3>
+        <p class="response">Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages. </p>
         <img src="img/ruby.jpeg" alt="Ruby/Rails"/>
       </div>
       <div class="php">
-        <h3>You Got PHP!</h3>
-        <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+      <h3>Congratulations <span class="name1"></span>! You should check out PHP</h3>
+        <p class="response">PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
         <img src="img/php.jpeg" alt="PHP"/>
       </div>
       </div>

@@ -2,6 +2,7 @@ $(document).ready(function(){
   $("#language").submit(function(event){
 
     $(".csharp, .ruby, .php").hide()
+    var name1Input = $("input#name1").val();
     var education = $("#eduacation").val();
     var location = $("#location").val();
     var start = $("#start").val();
@@ -9,6 +10,8 @@ $(document).ready(function(){
     var design = $("#design").val();
     var build = $("#build").val();
 
+    $(".name1").text(name1Input);
+    $("#form-text").show();
     if (size === "Established company" && design === "Design/interaction"){
       $(".csharp").show();
     }
