@@ -10,15 +10,18 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-      <h1>Take This Survey to Help Select your Programming Language!</h1>
-      <h2>Introduction</h2>
-      <p>Congratulations! You have decided that you want to check out the world of programming! As I am sure, you have done some research and now know that there is a lot of different languages out there. It can be extremely diffucult trying to nail down what language is best suited for you. Don't fret! This is where we come in! We have designed a short survey for you to take that will suggest one of five languages for you based on your answers!</p>
+      <h1>Epicodus Track Suggestion Survey</h1>
       </div>
-      <li>Ruby/Rails</li>
-      <li>PHP/Drupal</li>
-      <li>Java/Andriod</li>
-      <li>CSS/Design</li>
-      <li>C3/.NET</li>
+      <div class="well">
+      <h2>Introduction</h2>
+      <p id="intro">Congratulations! You have decided that you want to enroll at Epicodus and dive into the world of programming! I am sure you have done some research and now know that there is a lot of different languages and information out there. It can be extremely diffucult trying to nail down what language is best suited for you. Don't fret though, this is where we come in! We have designed a short survey for you to take that will suggest one of five languages for you based on your answers!</p>
+      <h3>Suggested languages</h3>
+      <li><a href="http://rubyonrails.org/">Ruby/Rails </a></li>
+      <li><a href="http://php.net/">PHP/Drupal</a></li>
+      <li><a href="https://developer.android.com/reference/java/net/package-summary.html">Java/Andriod</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS/Design</a></li>
+      <li><a href="http://c3js.org/">C3/.NET</a></li>
+      </div>
       <form id="language">
         <div class="questionnaire">
           <p class="questions">What is your education level?</p>
@@ -31,6 +34,12 @@
           <select class="form-control" id="location">
             <option>Portland</option>
             <option>Seattle</option>
+            <option>Either</option>
+          </select>
+          <p class="questions">When would you like to start your program?</p>
+          <select class="form-control" id="start">
+            <option>April or May</option>
+            <option>June or July</option>
             <option>Either</option>
           </select>
           <p class="questions">Would you prefer to work in a big established company or a startup?</p>
